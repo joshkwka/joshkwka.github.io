@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="static/slick/slick-theme.css"/>    
     <link rel="stylesheet" href="static/magnific-popup.css">
     <link rel="stylesheet" href="static/templatemo-dream-pulse.css" />
-    <link rel="shortcut icon" href="{{ url_for('static', filename='gear2.ico') }}">
+    <link rel="stylesheet" href="static/button.css" />
+    <link rel="icon" type="image/png" href="static/gear2.png"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -80,20 +81,46 @@
 
           <div class="tm-section-wrap bg-white">
             <section id="about" class="row tm-section">
+              
               <div class="col-12 col-md-4">
                 <div class="margin-bottom-70">                            
-                  <img class="border-radius-30" src="static/img/profilepic.png" alt="">
+                  <img class="border-radius-30" src="static/img/ansys/ansyscover.png" style="width: 110%" alt="">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="margin-bottom-70">                            
+                  <img class="border-radius-30" src="static/img/ansys/ansys_quad_linear.png" style="width: 70%" alt="">                           
                 </div>
               </div>
               <div class="col-12 col-md-8">
                 <div class="margin-bottom-30">
-                  <h2 class="tm-section-title tm-color-primary mb-5">ANSYS: Crash Bar Project (RENAME)</h2>
+                  <br>
+                  <br>
+                  <br>
+                  <h2 class="tm-section-title tm-color-primary mb-5">ANSYS: Dogbone Stress Analysis</h2>
                     <p class="mb-5">
-                      Crash bar Project Description
+                      In MIE222, I was assigned to analyze the stress properties of a certain dogbone geometry using Ansys. 
+                      The tests were done four times, using Quadrilateral Dominant element types with linear elements, then with 
+                      quadratic elements. Triangle element types were used with linear elements, then quadratic elements. 
                     </p>
-                    <p>
-                      second paragraph
+                    <p class="mb-5">
+                      The Finite Element Method discovered the key points of stress concentrations to be greatest near the edge of the 
+                      dogbone blade, where the curved edge meets the straight edge. Due to the nature of the geometry and its tight edges, 
+                      the model was not able to converge in the meshing process of the FEM analysis.
                     </p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="margin-bottom-70">                            
+                  <img class="border-radius-30" src="static/img/ansys/ansys-engineeringdrawing.png" style="width: 100%" alt="">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="margin-bottom-70">                            
+                  <img class="border-radius-30" src="static/img/ansys/meshing.png" style="width: 150%" alt="">
                 </div>
               </div>
               <div class="col-xl-12 mb-5">
