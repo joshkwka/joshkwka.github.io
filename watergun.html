@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="static//all.min.css" />
     <link rel="stylesheet" href="static//bootstrap.min.css" />
     <link rel="stylesheet" href="static/slick/slick.css"/>    
-    <link rel="stylesheet" href="static/slick/slick-theme.css"/>    
+    <link rel="stylesheet" href="static/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="static/picture.css"/>    
     <link rel="stylesheet" href="static/magnific-popup.css">
     <link rel="stylesheet" href="static/templatemo-dream-pulse.css" />
     <link rel="stylesheet" href="static/button.css" />
@@ -81,22 +82,66 @@
 
           <div class="tm-section-wrap bg-white">
             <section id="about" class="row tm-section">
-              <div class="col-12 col-md-4">
-                <div class="margin-bottom-70">                            
-                  <img class="border-radius-30" src="static/img/profilepic.png" alt="">
-                </div>
-              </div>
+              
               <div class="col-12 col-md-8">
                 <div class="margin-bottom-30">
-                  <h2 class="tm-section-title tm-color-primary mb-5">ROBOT ARM Project (RENAME)</h2>
-                    <p class="mb-5">
-                      ROBOT ARM Project Description
-                    </p>
-                    <p>
-                      second paragraph
-                    </p>
+                  <h1 id="remote-water-gun">Remote Water Gun</h1>
+                <p>For this project, I CAD designed a mount for a spray bottle which allows motors to control the pitch and yaw movement of the nozzle. 
+                A motor also controls the trigger so that the &quot;water gun&quot; can be shot remotely. </p>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img src="static/img/watergun/2watergun1.JPG" style="width: 100%" alt="">
+                </div>
+                <div class="column">
+                  <img src="static/img/watergun/2watergun2.JPG" style="width: 100%" alt=""> 
                 </div>
               </div>
+              
+              <br>
+
+              <div class="col-12 col-md-8">
+                <h3 id="mechanisms-">Mechanisms:</h3>
+                <br>
+                <h4 id="trigger-">Trigger:</h4>
+                <p>The Trigger is controlled by attaching the motor and trigger of the spray bottle with a pin, creating a slider crank. The slider crank converts the rotational force given by the motor into linear movement which pulls the trigger.</p>
+                <h4 id="pitch-">Pitch:</h4>
+                <p>The water gun turns on its pitch axis by directly mounting a motor to the mount made for the trigger mechanism.</p>
+                <h4 id="yaw-">Yaw:</h4>
+                <p>The water gun turns on its yaw axis by two gears. A motor sits behind the water gun assembly facing downwards with a 35mm gear attached to it. A 40mm gear is attached to the bottom of the pitch turning assembly, and when the gears mesh the motor&#39;s rotational energy is transmitted inversely to the water gun assembly.</p>
+                
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="margin-bottom-70">                            
+                  <img class="border-radius-30" src="static/img/watergun/watergunirl.jpg" style="width: 200%" alt="">
+                </div>
+              </div>
+              
+                
+              <div class="col-12 col-md-8">
+                <br>
+                <h4 id="necessary-equipment-">Necessary Equipment:</h4>
+                <ul>
+                  <li>Raspberry Pi</li>
+                  <li>Pi Camera</li>
+                  <li>3 Servo Motors</li>
+                  <li>Spray bottle top</li>
+                  <li>A 3D Printer</li>
+                </ul>
+                <h4 id="controls-">Controls:</h4>
+                <p>The code in <a href="https://github.com/joshkwka/Remote-Water-Gun">this repository</a> allows you to see what the water gun is pointing at via Pi Camera, and to use keyboard controls to move the water gun and fire.</p>
+                <ul>
+                  <li>Z or R must first be pressed to set the positions of the motors. <br/></li>
+                  <li>W A S D or the arrow keys can be used to adjust pitch and yaw. <br/></li>
+                  <li>Space Bar is used to fire. <br/> </li>
+                  <li>Q is used to quit the program.</li>
+                </ul>
+
+                </div>
+              </div>
+              
               <div class="col-xl-12 mb-5">
                 <div class="tm-contact-form-wrap">
                   <a href="index.html#work" class="btn rounded-0 d-block ml-auto">

@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="static//all.min.css" />
     <link rel="stylesheet" href="static//bootstrap.min.css" />
     <link rel="stylesheet" href="static/slick/slick.css"/>    
-    <link rel="stylesheet" href="static/slick/slick-theme.css"/>    
+    <link rel="stylesheet" href="static/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="static/picture.css"/>    
     <link rel="stylesheet" href="static/magnific-popup.css">
     <link rel="stylesheet" href="static/templatemo-dream-pulse.css" />
     <link rel="stylesheet" href="static/button.css" />
@@ -81,22 +82,61 @@
 
           <div class="tm-section-wrap bg-white">
             <section id="about" class="row tm-section">
+              
+              <div class="col-12 col-md-8">
+                
+                
+                <h1 id="industry-4-0-research-team-sfu">Industry 4.0 Research Team SFU</h1>
+                <p><img src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/https%3A%2F%2Fblogs-images.forbes.com%2Fbernardmarr%2Ffiles%2F2018%2F09%2FAdobeStock_203804824-1200x480.png" style="width: 90%" alt="alt text"></p>
+                <br>
+                <p>The Fourth Industrial Revolution consists of many new technologies that allow communication between 
+                  physical and digital worlds. This means that communication between sensors, actuators, PLCs, computers, 
+                  and many other components will be common and very important.</p>
+                <br>
+                <h3 id="2021-summer">2021 Summer</h3>
+                <p>Throughout the summer of 2021, I joined SFU&#39;s Industry 4.0 Research Team and approached this topic 
+                  by gathering sensor data from an Arduino, and uploading this data to an OPC UA server via Raspberry Pi. 
+                  A potentiometer and ultrasonic sensor were used to gather data onto the Arduino, and the Arduino was programmed 
+                  to constantly upload the sensors&#39; data to Serial. As the Raspberry Pi and Arduino were connected via USB, 
+                  the Raspberry Pi could then read the data using the pyserial module in python. Then I set up an OPC UA server
+                  on the Raspberry Pi which uploaded the potentiometer and ultrasonic sensor values in realtime.</p>
+                <p>This data can now be accessed by any local OPC UA client. Initially, I was able to successfully connect to 
+                  the OPC UA server via UA Expert, but found that Inductive Automation&#39;s Ignition software had much more 
+                  useful features, such as scheduled reports. Using Ignition, I built a dashboard presenting realtime 
+                  values of the sensors on graphs and gauges. I was also able to schedule daily reports which organizes the 24 
+                  Hour history of the sensors, and downloads it onto my PC as a PDF.</p>
+                <br>
+                <h3 id="future-plans">Future Plans</h3>
+                <p>Future plans will involve working with actual PLCs and possibly Industrial machines. Communication between a 
+                  real machine like a robot arm and a PLC would be a large step. Physical data could be gathered using sensors, 
+                  then it could be communicated within the virtual environment and a physical response would be presented by the 
+                  robots on the field.</p>
+                <br>
+                <h4 id="equipment-used-">Equipment Used:</h4>
+                <ul>
+                  <li>Arduino Uno</li>
+                  <li>Ultrasonic Sensor</li>
+                  <li>Potentiometer</li>
+                  <li>Raspberry Pi Zero</li>
+                </ul>
+                <br>
+                <h4 id="programs-used-">Programs Used:</h4>
+                <ul>
+                  <li>Python 3</li>
+                  <li>Ignition (Ver. 8.1.7)</li>
+                  <li>Ignition Designer </li>
+                  <li>UA Expert</li>
+                  <li>Arduino IDE (Ver. 1.8.15)</li>
+                </ul>
+              </div>
+
               <div class="col-12 col-md-4">
                 <div class="margin-bottom-70">                            
-                  <img class="border-radius-30" src="static/img/profilepic.png" alt="">
+                  <img class="border-radius-30" src="static/img/ignitionReport.png" alt="">
                 </div>
               </div>
-              <div class="col-12 col-md-8">
-                <div class="margin-bottom-30">
-                  <h2 class="tm-section-title tm-color-primary mb-5">OPC UA Project (RENAME)</h2>
-                    <p class="mb-5">
-                      OPC UA Project Description
-                    </p>
-                    <p>
-                      second paragraph
-                    </p>
-                </div>
-              </div>
+
+              
               <div class="col-xl-12 mb-5">
                 <div class="tm-contact-form-wrap">
                   <a href="index.html#work" class="btn rounded-0 d-block ml-auto">
