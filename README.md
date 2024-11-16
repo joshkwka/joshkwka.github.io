@@ -1,7 +1,10 @@
-# Engineering Portfolio
+# Joshua Kwak's Portfolio Website
 
-## [JoshKwak.com](https://www.joshkwak.com)
+This repository contains the code for my personal portfolio website, hosted on GitHub Pages. It showcases my projects, skills, and professional experience in both mechanical and software engineering. Check it out [here](https://joshkwak.com).
 
-A website Portfolio written in html, css, and javascript. This website displays my skills and personal experiences as an Engineer.
+## Technologies Used
 
-![alt text](https://github.com/joshkwka/joshkwka.github.io/blob/main/static/img/git/website.png)
+- **HTML/CSS**: Structure and styling of the website.
+- **JavaScript**: Interactive elements and dynamic content.
+- **Frameworks/Libraries**: 
+- **Hosting**: GitHub Pages
