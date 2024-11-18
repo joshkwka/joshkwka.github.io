@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fff;
+  --foreground: #252525;
+  --header-background: #f0f1f2; 
+  --header-foreground: #3c4043;
+  --header-hover-background: #e1e3e5; 
+  --header-hover-foreground: #3c4043;
+  --border: #e0e0e0;
+  --hero-car-image: url('/images/hero/light-hero-car.png');
+  --sidebar-background: #d2deea56; 
+  --sidebar-foreground: #252525;
+  --sidebar-hover-background: #d2deeaa4;
+}
+
+html[data-theme="dark"] {
+  --background: #252525;
+  --foreground: #e0e0e0;
+  --header-background: #333;
+  --header-foreground: #e0e0e0;
+  --header-hover-background: #444444;
+  --header-hover-foreground: #e0e0e0;
+  --border: #474747;
+  --hero-car-image: url('/images/hero/dark-hero-car.png');
+  --sidebar-background: #d2deea56;
+  --sidebar-foreground: #e0e0e0;
+  --sidebar-hover-background: #d2deeaa4;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+h1, h2, p, a {
+  color: var(--foreground);
+}
+
+a:hover {
+  color: var(--foreground);
+}
