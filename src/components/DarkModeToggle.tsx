@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDarkMode } from '@/contexts/DarkModeContext'; // Import from your context
+import { useDarkMode } from '@/contexts/DarkModeContext';
 import Image from 'next/image';
 
 const DarkModeToggle: React.FC = () => {

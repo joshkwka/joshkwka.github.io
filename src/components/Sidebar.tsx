@@ -8,6 +8,19 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ isOpen = false, toggleSidebar }: SidebarProps) {
+  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
+    e.preventDefault();
+
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 h-full bg-[var(--sidebar-background)] text-[var(--sidebar-foreground)] w-64 transform ${
@@ -27,6 +40,7 @@ export default function Sidebar({ isOpen = false, toggleSidebar }: SidebarProps)
         <li>
           <a
             href="#home"
+            onClick={(e) => handleScrollToSection(e, "home")}
             className="block mt-8 px-4 py-2 rounded-md hover:bg-[var(--sidebar-hover-background)] transition-colors duration-200 ease-in-out"
           >
             Home
@@ -35,6 +49,7 @@ export default function Sidebar({ isOpen = false, toggleSidebar }: SidebarProps)
         <li>
           <a
             href="#education"
+            onClick={(e) => handleScrollToSection(e, "education")}
             className="block px-4 py-2 rounded-md hover:bg-[var(--sidebar-hover-background)] transition-colors duration-200 ease-in-out"
           >
             Education
@@ -43,6 +58,7 @@ export default function Sidebar({ isOpen = false, toggleSidebar }: SidebarProps)
         <li>
           <a
             href="#projects"
+            onClick={(e) => handleScrollToSection(e, "projects")}
             className="block px-4 py-2 rounded-md hover:bg-[var(--sidebar-hover-background)] transition-colors duration-200 ease-in-out"
           >
             Projects
@@ -51,6 +67,7 @@ export default function Sidebar({ isOpen = false, toggleSidebar }: SidebarProps)
         <li>
           <a
             href="#workexperience"
+            onClick={(e) => handleScrollToSection(e, "workexperience")}
             className="block px-4 py-2 rounded-md hover:bg-[var(--sidebar-hover-background)] transition-colors duration-200 ease-in-out"
           >
             Work Experience
@@ -59,6 +76,7 @@ export default function Sidebar({ isOpen = false, toggleSidebar }: SidebarProps)
         <li>
           <a
             href="#photos"
+            onClick={(e) => handleScrollToSection(e, "photos")}
             className="block px-4 py-2 rounded-md hover:bg-[var(--sidebar-hover-background)] transition-colors duration-200 ease-in-out"
           >
             Photos

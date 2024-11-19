@@ -48,8 +48,8 @@ const DropdownInfo: React.FC<DropdownInfoProps> = ({
         ref={contentRef}
         className={`px-4 py-2 overflow-hidden transition-all duration-450 ease-in-out ${
           isOpen
-            ? "max-h-[800px] opacity-100" // Expand dropdown
-            : "max-h-0 opacity-0" // Collapse dropdown
+            ? "max-h-[800px] opacity-100"
+            : "max-h-0 opacity-0"
         }`}
       >
         {/* Location */}

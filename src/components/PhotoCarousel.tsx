@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper/modules'; // Import SwiperCore
+import SwiperCore, { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -19,7 +19,6 @@ const PhotoCarousel = () => {
     '/images/photoCarousel/e301.jpg',
   ];
 
-  // Create a reference for the Swiper instance
   const swiperRef = useRef<SwiperCore | null>(null);
 
   return (
