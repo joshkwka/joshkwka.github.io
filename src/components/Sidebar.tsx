@@ -1,6 +1,5 @@
 import React from "react";
 import DarkModeToggle from "@/components/DarkModeToggle";
-import Image from "next/image";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -26,7 +25,7 @@ export default function Sidebar({ isOpen = false, toggleSidebar }: SidebarProps)
       className={`fixed top-0 left-0 h-full bg-[var(--sidebar-background)] text-[var(--sidebar-foreground)] w-64 transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 ease-in-out
-      backdrop-blur-md shadow-lg`}
+      backdrop-blur-md shadow-lg z-20`}
     >
       <div className="flex justify-end p-2">
         <button
@@ -85,7 +84,7 @@ export default function Sidebar({ isOpen = false, toggleSidebar }: SidebarProps)
       </ul>
 
       <div className="absolute bottom-20 left-0 right-0 px-4">
-        <DarkModeToggle /> {/* Place DarkModeToggle here */}
+        <DarkModeToggle />
       </div>
     </div>
   );

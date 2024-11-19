@@ -29,11 +29,11 @@ const PhotoCarousel = () => {
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
-          navigation={true} // Enables built-in navigation
-          pagination={{ clickable: true }} // Enables pagination dots
-          modules={[Navigation, Pagination]} // Registers navigation and pagination modules
-          grabCursor={true} // Enables click-to-swipe functionality
-          onSwiper={(swiper) => (swiperRef.current = swiper)} // Stores Swiper instance
+          navigation={true} 
+          pagination={{ clickable: true }} 
+          modules={[Navigation, Pagination]} 
+          grabCursor={true} 
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
           {photos.map((photo, index) => (
             <SwiperSlide key={index}>

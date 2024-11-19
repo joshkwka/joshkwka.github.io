@@ -1,38 +1,44 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
+
+interface BulletPoint {
+  category?: string;
+  description: string;
+}
 
 interface Position {
   title: string;
   date?: string;
-  description: string;
+  bulletPoints: BulletPoint[];
 }
 
 interface DropdownInfoProps {
   company: string;
   date?: string;
   location?: string;
-  positions?: Position[];
-  content?: string | React.ReactNode;
+  positions: Position[];
   initiallyOpen?: boolean;
+  onToggle?: () => void;
 }
 
 const DropdownInfo: React.FC<DropdownInfoProps> = ({
   company,
   date,
   location,
-  positions,
-  content,
+  positions = [],
   initiallyOpen = false,
+  onToggle,
 }) => {
   const [isOpen, setIsOpen] = useState(initiallyOpen);
-  const contentRef = useRef<HTMLDivElement | null>(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
+    if (onToggle) { 
+      onToggle();
+    }
   };
 
   return (
-    <div className="mb-4"> {/* border-b border-[var(--border)]"> */}
-      {/* Company and Overall Date */}
+    <div className="mb-4">
       <button
         onClick={toggleDropdown}
         className="rounded-lg w-full flex justify-between items-center px-4 py-2 text-lg font-bold
@@ -43,42 +49,34 @@ const DropdownInfo: React.FC<DropdownInfoProps> = ({
         {date && <span className="text-sm">{date}</span>}
       </button>
 
-      {/* Content with smooth sliding transition */}
       <div
-        ref={contentRef}
         className={`px-4 py-2 overflow-hidden transition-all duration-450 ease-in-out ${
-          isOpen
-            ? "max-h-[800px] opacity-100"
-            : "max-h-0 opacity-0"
+          isOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        {/* Location */}
         {location && (
-          <h3 className="text-sm font-medium mb-2">
-            Location: {location}
-          </h3>
+          <h3 className="text-sm font-medium mb-2">Location: {location}</h3>
         )}
-        {/* Multiple Positions */}
-        {positions ? (
-          <div className="space-y-4">
-            {positions.map((position, index) => (
-              <div key={index}>
-                <h3 className="text-md font-semibold">
-                  {position.title}{" "}
-                  <span className="text-sm">{date && position.date}</span>
-                </h3>
-                <p>{position.description}</p>
-              </div>
-            ))}
-          </div>
-        ) : (
-          // Single Role
-          typeof content === "string" ? (
-            <p>{content}</p>
-          ) : (
-            content
-          )
-        )}
+        <div className="space-y-4">
+          {positions.map((position, index) => (
+            <div key={index}>
+              <h3 className="text-md font-semibold flex justify-between items-center">
+                {position.title}
+                {position.date && (
+                  <span className="text-sm text-right">{position.date}</span>
+                )}
+              </h3>
+              {/* Ensure bulletPoints is defined as an array */}
+              <ul className="list-disc pl-5">
+                {(position.bulletPoints || []).map((point, idx) => (
+                  <li key={idx}>
+                    {point.description} <span className="text-sm"></span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

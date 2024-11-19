@@ -12,19 +12,34 @@ const WorkExperience = () => {
       company: "Tesla",
       date: "2020 - Present",
       location: "Fremont, California, USA",
-      category: "Both",
       positions: [
         {
           title: "Associate CAE Engineer",
           date: "Aug 2023 - Present",
-          category: "Mechanical",
-          description: "...",
+          bulletPoints: [
+            {
+              category: "Mechanical",
+              description: "Performed crash simulations to improve occupant safety.",
+            },
+            {
+              category: "Software",
+              description: "Developed software tools to analyze crash data.",
+            },
+            {
+              category: "Both",
+              description: "Both!",
+            },
+          ],
         },
         {
           title: "CAE Engineer Intern",
           date: "Jan 2023 - Jul 2023",
-          category: "Mechanical",
-          description: "Performed crash simulations and analysis to improve occupant safety across multiple vehicle platforms.",
+          bulletPoints: [
+            {
+              category: "Mechanical",
+              description: "Analyzed crash simulations for various vehicle platforms.",
+            },
+          ],
         },
       ],
     },
@@ -33,58 +48,16 @@ const WorkExperience = () => {
       company: "Veoneer",
       date: "2018 - 2020",
       location: "Markham, Ontario, Canada",
-      category: "Mechanical",
       positions: [
         {
           title: "NPPI Engineer Intern",
           date: "May 2022 - Dec 2022",
-          category: "Mechanical",
-          description: "...",
-        },
-      ],
-    },
-    {
-      id: "utcv",
-      company: "University of Toronto Chemical Vehicles Design Team",
-      date: "2018 - 2020",
-      location: "Toronto, Ontario, Canada",
-      category: "Both",
-      positions: [
-        {
-          title: "NPPI Engineer Intern",
-          date: "May 2022 - Dec 2022",
-          category: "Software",
-          description: "...",
-        },
-      ],
-    },
-    {
-      id: "sfu",
-      company: "Simon Fraser University",
-      date: "2018 - 2020",
-      location: "Markham, Ontario, Canada",
-      category: "Software",
-      positions: [
-        {
-          title: "NPPI Engineer Intern",
-          date: "May 2022 - Dec 2022",
-          category: "Software",
-          description: "...",
-        },
-      ],
-    },
-    {
-      id: "fsae",
-      company: "University of Toronto FSAE Design Team",
-      date: "2018 - 2020",
-      location: "Markham, Ontario, Canada",
-      category: "Software",
-      positions: [
-        {
-          title: "NPPI Engineer Intern",
-          date: "May 2022 - Dec 2022",
-          category: "Software",
-          description: "...",
+          bulletPoints: [
+            {
+              category: "Mechanical",
+              description: "Designed and tested safety systems for autonomous vehicles.",
+            },
+          ],
         },
       ],
     },
@@ -97,9 +70,19 @@ const WorkExperience = () => {
     }));
   };
 
-  const filteredWorkExperiences = workExperiences.filter(
-    (job) => job.category === activeTab || job.category === "Both"
-  );
+  const filteredWorkExperiences = workExperiences
+    .map((job) => ({
+      ...job,
+      positions: job.positions
+        .map((position) => ({
+          ...position,
+          bulletPoints: position.bulletPoints.filter(
+            (point) => point.description && (point.category === activeTab || point.category === "Both")
+          ),
+        }))
+        .filter((position) => position.bulletPoints.length > 0),
+    }))
+    .filter((job) => job.positions.length > 0);
 
   return (
     <section id="workexperience" className="mt-24 my-8 py-4 px-4">
@@ -116,9 +99,7 @@ const WorkExperience = () => {
             location={job.location}
             initiallyOpen={openJobs[job.id] ?? false}
             onToggle={() => toggleJob(job.id)}
-            positions={job.positions.filter(
-              (position) => position.category === activeTab || position.category === "Both"
-            )}
+            positions={job.positions}
           />
         ))}
       </div>

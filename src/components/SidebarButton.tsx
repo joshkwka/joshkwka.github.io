@@ -22,7 +22,7 @@ export default function SidebarButton() {
       {!isSidebarOpen && ( 
         <button
           onClick={toggleSidebar}
-          className="fixed top-4 left-4 w-10 h-10 flex items-center justify-center rounded-full hover:bg-[var(--sidebar-background)] transition-colors duration-200 ease-in-out"
+          className="fixed top-4 left-4 w-10 h-10 flex items-center justify-center rounded-full hover:bg-[var(--sidebar-background)] transition-colors duration-200 ease-in-out z-20"
         >
           ☰
         </button>
