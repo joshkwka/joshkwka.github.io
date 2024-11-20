@@ -1,5 +1,6 @@
 import React from "react";
 import DarkModeToggle from "@/components/DarkModeToggle";
+import ProfileLinks from "@/components/ProfileLinks";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -83,6 +84,9 @@ export default function Sidebar({ isOpen = false, toggleSidebar }: SidebarProps)
         </li>
       </ul>
 
+      <div className="absolute bottom-32 left-0 right-0 px-4">
+        <ProfileLinks />
+      </div>
       <div className="absolute bottom-20 left-0 right-0 px-4">
         <DarkModeToggle />
       </div>
