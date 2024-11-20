@@ -19,7 +19,7 @@ const Education = () => {
                   description: "GPA 3.92/4.0",
                 },
                 {
-                  description: "Specialization in Mechatronics and Solid Mechanics and Design",
+                  description: "Specialized in Mechatronics, integrating mechanical, software, and electrical engineering to develop innovative technologies",
                 },
                 {
                   description: "Coursework in Mechatronics Principles, Mechatronics Systems, Design Optimization, and others",
