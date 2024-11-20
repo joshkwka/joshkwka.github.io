@@ -1,6 +1,5 @@
-import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -19,8 +18,6 @@ const PhotoCarousel = () => {
     '/images/photoCarousel/e301.jpg',
   ];
 
-  const swiperRef = useRef<SwiperCore | null>(null);
-
   return (
     <section id="photos" className="mt-24 my-8 py-4 px-4">
       <h2 className="text-3xl font-bold mb-6">Photos I've Taken</h2>
@@ -32,8 +29,7 @@ const PhotoCarousel = () => {
           navigation={true} 
           pagination={{ clickable: true }} 
           modules={[Navigation, Pagination]} 
-          grabCursor={true} 
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          grabCursor={true}
         >
           {photos.map((photo, index) => (
             <SwiperSlide key={index}>

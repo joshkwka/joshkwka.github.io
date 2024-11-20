@@ -32,7 +32,7 @@ const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }
     // Timer to periodically update the colors
     const timer = setInterval(() => {
       setColorUpdateKey((prev) => prev + 1);
-    }, 200); // Update colors every 200ms
+    }, 200);
 
     return () => clearInterval(timer);
   }, []);
@@ -65,27 +65,20 @@ const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }
     const centerX = screenWidth / 2;
     const centerY = screenHeight / 2;
   
-    // Calculate the distance to the center of the screen
     const distance = Math.sqrt(Math.pow(dotX - centerX, 2) + Math.pow(dotY - centerY, 2));
-  
-    // Use the maximum possible distance (diagonal) to normalize the opacity
     const maxDistance = Math.sqrt(Math.pow(centerX, 2) + Math.pow(centerY, 2));
   
     // Calculate the opacity as a combination of both horizontal and vertical distance  
     const horizontalDistanceFactor = Math.abs(dotX - centerX) / screenWidth;
-    const verticalDistanceFactor = Math.abs(dotY - centerY) / screenHeight;
-  
-    // Combine both factors for a consistent fade across the screen
+    const verticalDistanceFactor = Math.abs(dotY - centerY) / screenHeight;  
     const totalDistanceFactor = 1.8*Math.max(horizontalDistanceFactor, verticalDistanceFactor);
   
-    // Calculate opacity based on the distance factor
-    const opacity = Math.max(0.25 - totalDistanceFactor * 0.25, 0);
+    const opacity = Math.max(0.15 - totalDistanceFactor * 0.15, 0);
   
     return opacity;
   };
   
 
-  // Function to determine if a dot is within the hover radius
   const isWithinHoverRadius = (dotX: number, dotY: number) => {
     const distance = Math.sqrt(
       Math.pow(mousePosition.x - dotX, 2) + Math.pow(mousePosition.y - dotY, 2)
@@ -94,7 +87,6 @@ const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }
     return distance <= hoverRadius;
   };
 
-  // Function to calculate the color based on distance from the mouse
   const getGradientColor = (dotX: number, dotY: number) => {
     const distance = Math.sqrt(
       Math.pow(mousePosition.x - dotX, 2) + Math.pow(mousePosition.y - dotY, 2)
@@ -121,7 +113,7 @@ const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }
         const dotSize = 7;
         const opacity = getDotOpacity(dot.x, dot.y);
 
-        // Set the dot color based on hover state and apply gradient effect
+        // Set dot color based on hover state and apply gradient effect
         const isHovered = isWithinHoverRadius(dot.x, dot.y);
         const dotColor = isHovered
           ? getGradientColor(dot.x, dot.y)
@@ -129,7 +121,7 @@ const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }
 
         return (
           <div
-            key={`${index}-${colorUpdateKey}`} // Trigger re-render on color update
+            key={`${index}-${colorUpdateKey}`}
             className="absolute rounded-full z-10"
             style={{
               left: `${dot.x}px`,

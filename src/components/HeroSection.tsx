@@ -6,6 +6,7 @@ import DotsGrid from '@/components/DotsGrid';
 const HeroSection = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [speedMultiplier, setSpeedMultiplier] = useState(1);
   const { isDarkMode } = useDarkMode();
 
   const handleScroll = () => {
@@ -17,16 +18,23 @@ const HeroSection = () => {
   };
 
   useEffect(() => {
+    const calculateSpeedMultiplier = () => {
+      const width = window.innerWidth;
+      setSpeedMultiplier((width / 1000) * 1.15);
+    };
+
+    calculateSpeedMultiplier();
+    window.addEventListener('resize', calculateSpeedMultiplier);
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
+      window.removeEventListener('resize', calculateSpeedMultiplier);
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
-  const speedMultiplier = (window.innerWidth / 1000) * 1.15;
   const translateX = scrollPosition * speedMultiplier;
 
   return (
@@ -49,7 +57,6 @@ const HeroSection = () => {
         />
       </motion.div>
 
-      {/* Dot Grid Background (Now a Separate Component) */}
       <DotsGrid mousePosition={mousePosition} />
 
       {/* Main Content */}

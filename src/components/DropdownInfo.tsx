@@ -66,7 +66,6 @@ const DropdownInfo: React.FC<DropdownInfoProps> = ({
                   <span className="text-sm text-right">{position.date}</span>
                 )}
               </h3>
-              {/* Ensure bulletPoints is defined as an array */}
               <ul className="list-disc pl-5">
                 {(position.bulletPoints || []).map((point, idx) => (
                   <li key={idx}>

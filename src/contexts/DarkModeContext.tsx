@@ -15,7 +15,6 @@ export const useDarkMode = (): DarkModeContextProps => {
   return context;
 };
 
-// Update the DarkModeProvider to accept children
 export const DarkModeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 

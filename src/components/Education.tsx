@@ -16,13 +16,22 @@ const Education = () => {
               title: "Bachelor of Applied Science - Mechanical Engineering",
               bulletPoints: [
                 {
-                  description: "Specializing in Mechatronics and Solid Mechanics and Design",
+                  description: "GPA 3.92/4.0",
                 },
                 {
-                  description: "Courses included Thermodynamics, Kinematics, and Design",
+                  description: "Specialization in Mechatronics and Solid Mechanics and Design",
                 },
                 {
-                  description: "Led projects focused on automation and robotics",
+                  description: "Coursework in Mechatronics Principles, Mechatronics Systems, Design Optimization, and others",
+                },
+                {
+                  description: "Dean's Honours List: Fall 2019, Winter 2020, Fall 2020, Winter 2021, Fall 2022, Winter 2023, Fall 2023, Winter 2024",
+                },
+                {
+                  description: "Recipient of the Constant Temperature Control Ltd Scholarship on the basis of high academic standing in Third Year",
+                },
+                {
+                  description: "Recipient of the Baptie Scholarship for achieving the highest aggregate percentage of marks in the first year annual examinations",
                 },
               ],
             }

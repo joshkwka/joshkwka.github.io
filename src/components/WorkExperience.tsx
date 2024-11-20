@@ -4,7 +4,9 @@ import Tabs from "@/components/Tabs";
 
 const WorkExperience = () => {
   const [activeTab, setActiveTab] = useState<"Software" | "Mechanical">("Software");
-  const [openJobs, setOpenJobs] = useState<{ [key: string]: boolean }>({});
+  const [openJobs, setOpenJobs] = useState<{ [key: string]: boolean }>({
+    tesla: true, 
+  });
 
   const workExperiences = [
     {
@@ -14,7 +16,7 @@ const WorkExperience = () => {
       location: "Fremont, California, USA",
       positions: [
         {
-          title: "Associate CAE Engineer",
+          title: "Associate Analysis Engineer",
           date: "Aug 2023 - Present",
           bulletPoints: [
             {
@@ -27,12 +29,12 @@ const WorkExperience = () => {
             },
             {
               category: "Both",
-              description: "Both!",
+              description: "text!",
             },
           ],
         },
         {
-          title: "CAE Engineer Intern",
+          title: "Analysis Engineer Intern",
           date: "Jan 2023 - Jul 2023",
           bulletPoints: [
             {

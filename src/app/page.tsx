@@ -13,7 +13,7 @@ import { DarkModeProvider } from '@/contexts/DarkModeContext';
 export default function Home() {
 
   return (
-    <>
+    <div className="scroll-container">
       <DarkModeProvider>
         {/* Main Content */}
         <HeroSection />
@@ -26,6 +26,6 @@ export default function Home() {
         {/* Side Bar */}
         <SidebarButton />
       </DarkModeProvider>
-    </>
+    </div>
   );
 }

@@ -5,69 +5,104 @@ import Tabs from "@/components/Tabs";
 const ProjectsSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"Software" | "Mechanical">("Software");
 
+  // Images should be 925x500
   const softwareProjects = [
     {
       title: "Portfolio Website",
       description: "A personal portfolio built with Next.js and Tailwind CSS.",
       link: "https://joshkwak.com",
+      image: "/images/projects/portfolio.png",
+      skills: ["Next.js", "Tailwind CSS", "React"],
+      textColor: "dark",
     },
     {
-        title: "Example Project",
-        description: "example description.",
-        link: "https://google.com",
+      title: "Example",
+      description: "...",
+      link: "/images/projects/3DPrinter.png",
+      skills: ["React", "Firebase", "JavaScript"],
+      textColor: "dark",
     },
     {
-      title: "Example Project",
-      description: "example description.",
-      link: "https://google.com",
+      title: "Example",
+      description: "...",
+      link: "/images/projects/3DPrinter.png",
+      skills: ["React", "Firebase", "JavaScript"],
+      textColor: "dark",
     },
     {
-      title: "Example Project",
-      description: "example description.",
-      link: "https://google.com",
+      title: "Industry 4.0 Research",
+      description: "Desc",
+      link: "https://joshkwak.com",
+      image: "/images/projects/portfolio.png",
+      skills: ["Next.js", "Tailwind CSS", "React"],
+      textColor: "dark",
     },
     {
-      title: "Example Project",
-      description: "example description.",
-      link: "https://google.com",
+      title: "Industry 4.0 Research",
+      description: "Desc",
+      link: "https://joshkwak.com",
+      image: "/images/projects/portfolio.png",
+      skills: ["Next.js", "Tailwind CSS", "React"],
+      textColor: "dark",
     },
     {
-      title: "Example Project",
-      description: "example description.",
-      link: "https://google.com",
+      title: "Industry 4.0 Research",
+      description: "Desc",
+      link: "https://joshkwak.com",
+      image: "/images/projects/portfolio.png",
+      skills: ["Next.js", "Tailwind CSS", "React"],
+      textColor: "dark",
     },
   ];
 
   const mechanicalProjects = [
     {
-        title: "Example Project",
-        description: "example description.",
-        link: "https://google.com",
+      title: "3D Printer",
+      description: "3D Printer desc.",
+      link: "https://google.com",
+      image: "/images/projects/3DPrinter.png",
+      skills: ["SolidWorks", "3D Modeling"],
+      textColor: "dark",
     },
     {
-      title: "Example Project",
-      description: "example description.",
+      title: "Maze-Solving Rover",
+      description: "desc.",
       link: "https://google.com",
+      image: "/images/projects/3DPrinter.png",
+      skills: ["Automation", "Control Systems", "Robotics"],
+      textColor: "light",
     },
     {
-      title: "Example Project",
-      description: "example description.",
+      title: "Kayak Carrier",
+      description: "Designed...",
       link: "https://google.com",
+      image: "/images/projects/portfolio.png",
+      skills: ["Automation", "Control Systems", "Robotics"],
+      textColor: "dark",
     },
     {
-      title: "Example Project",
-      description: "example description.",
+      title: "ECU Module Opening Station",
+      description: "Designed...",
       link: "https://google.com",
+      image: "/images/projects/portfolio.png",
+      skills: ["Automation", "Control Systems", "Robotics"],
+      textColor: "dark",
     },
     {
-      title: "Example Project",
-      description: "example description.",
+      title: "Remote Water Gun",
+      description: "Designed...",
       link: "https://google.com",
+      image: "/images/projects/portfolio.png",
+      skills: ["Automation", "Control Systems", "Robotics"],
+      textColor: "dark",
     },
     {
-      title: "Example Project",
-      description: "example description.",
+      title: "ANSYS Dogbone Analysis",
+      description: "Designed...",
       link: "https://google.com",
+      image: "/images/projects/portfolio.png",
+      skills: ["Automation", "Control Systems", "Robotics"],
+      textColor: "dark",
     },
   ];
 
@@ -89,6 +124,9 @@ const ProjectsSection: React.FC = () => {
             title={project.title}
             description={project.description}
             link={project.link}
+            image={project.image}
+            skills={project.skills}
+            textColor={project.textColor}
           />
         ))}
       </div>
