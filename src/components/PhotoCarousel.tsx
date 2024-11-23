@@ -16,6 +16,8 @@ const PhotoCarousel = () => {
     '/images/photoCarousel/s2k.jpg',
     '/images/photoCarousel/silverrx72.jpg',
     '/images/photoCarousel/e301.jpg',
+    '/images/photoCarousel/miata.jpg',
+    '/images/photoCarousel/momo.jpg',
   ];
 
   return (
