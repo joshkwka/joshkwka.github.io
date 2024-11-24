@@ -25,6 +25,7 @@ The TurtleBot was required to:
   - Optimized object visitation order by minimizing **Euclidean distances** between objects.
 - **Object Positioning**:
   - Calculated valid positions relative to objects to ensure clear detection.
+##
 ![Angled-Approach](/images/projects/object-recognition-robot/angles.png)
 
 ### Object Identification
@@ -34,6 +35,7 @@ The TurtleBot was required to:
   - Addressed discrepancies between simulated and real-world conditions.
 - **Confidence Levels**:
   - Determined matches for template images, blank images, and duplicates based on confidence thresholds.
+##
 ![Feature-Detection](/images/projects/object-recognition-robot/feature-detection.png)
 ---
 
@@ -72,11 +74,3 @@ The TurtleBot was required to:
    - Adopt **machine learning techniques** for enhanced accuracy.
 3. **Testing**:
    - Conduct extensive trials in diverse environments to ensure robust performance.
-
----
-
-## Figures to Include
-
-1. **Figure 4**: Robot’s angle offsets around an object.
-2. **Figure 5**: High-cost area navigation issues.
-3. **Figure 6**: Feature detection and matching examples.
