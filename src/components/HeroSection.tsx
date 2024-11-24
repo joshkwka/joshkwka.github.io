@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useDarkMode } from "@/contexts/DarkModeContext";
 import DotsGrid from "@/components/DotsGrid";
+import Image from "next/image";
 
 const HeroSection = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -49,11 +50,12 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <img
+        <Image
           src={isDarkMode ? "/images/hero/light-hero-car.png" : "/images/hero/dark-hero-car.png"}
           alt="Car"
           width={320}
           height={103}
+          priority
         />
       </motion.div>
 

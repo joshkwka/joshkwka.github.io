@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --font-bodoni-moda: sans-serif;
   --background: #fff;
   --foreground: #252525;
   --header-background: #f0f1f2; 
@@ -20,6 +21,7 @@
 }
 
 html[data-theme="dark"] {
+  --font-bodoni-moda: sans-serif;
   --background: #252525;
   --foreground: #e0e0e0;
   --header-background: #333;
@@ -41,6 +43,7 @@ html[data-theme="dark"] {
 body {
   color: var(--foreground);
   background: var(--background);
+  font-family: var(--font-bodoni-moda);
 }
 
 h1, h2, p, a {

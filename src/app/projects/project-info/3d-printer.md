@@ -3,7 +3,7 @@ title: "MIE243 Design Project: Additive Manufacturing Printer"
 ---
 
 ## Project Overview
-
+![Printer](/images/projects/3DPrinter.png)
 The **MindCraft3D** is a professional-grade 3D printer designed to provide reliable and affordable prototyping solutions for small design firms. Utilizing **FDM (Fused Deposition Modeling)** technology, it incorporates innovations for superior usability, durability, and cost-efficiency.
 
 ---

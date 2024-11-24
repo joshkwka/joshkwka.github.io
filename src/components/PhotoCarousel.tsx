@@ -3,6 +3,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const PhotoCarousel = () => {
   const photos = [
@@ -35,7 +36,13 @@ const PhotoCarousel = () => {
           {photos.map((photo, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center w-full">
-                <img src={photo} alt={`Slide ${index + 1}`} className="md:w-3/4 lg:w-3/5 h-auto rounded-md" />
+                <Image
+                  src={photo}
+                  alt={`Slide ${index + 1}`}
+                  width={800}
+                  height={600}
+                  className="md:w-3/4 lg:w-3/5 h-auto rounded-md"
+                />
               </div>
             </SwiperSlide>
           ))}

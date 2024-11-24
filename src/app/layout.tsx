@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
+import { Bodoni_Moda } from "next/font/google";
+
+const bodoniModa = Bodoni_Moda({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-bodoni-moda",
+});
 
 export const metadata: Metadata = {
   title: "Joshua Kwak | Engineer: Software & Mechanical",
@@ -12,14 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        {/* Import Bodoni Moda from Google Fonts */}
-        <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap"
-        rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={bodoniModa.variable}>
       <body className="font-serif">
         {children}
       </body>

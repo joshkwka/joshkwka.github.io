@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ProjectProps {
   title: string;
@@ -27,16 +28,17 @@ const Project: React.FC<ProjectProps> = ({
     <>
       {/* Display the image */}
       {hasImage && (
-        <img
-          src={image}
-          alt={title}
-          className={`w-full object-cover transition-all transition-opacity duration-300 transform ${
-            isHovered ? "backdrop-blur-md opacity-20" : "opacity-100"
-          } z-10`}
-          style={{
-            height: "500px",
-          }}
-        />
+        <div className="relative w-full h-[500px]">
+          <Image
+            src={image}
+            alt={title || "Project image"}
+            layout="fill" // Ensures dynamic width
+            objectFit="cover" // Maintains aspect ratio
+            className={`transition-all transition-opacity duration-300 transform ${
+              isHovered ? "backdrop-blur-md opacity-20" : "opacity-100"
+            } z-10`}
+          />
+        </div>
       )}
 
       {/* Content */}
