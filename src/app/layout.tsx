@@ -39,19 +39,6 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
         <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png" />
-        <meta property="og:title" content="Joshua Kwak | Engineer: Software & Mechanical" />
-        <meta
-          property="og:description"
-          content="Portfolio of Joshua Kwak, showcasing software and mechanical projects."
-        />
-        <meta property="og:image" content="/images/og-image.jpg" />
-        <meta property="og:url" content="https://your-portfolio-domain.com" />
-        <meta property="og:type" content="website" />
-        <title>Joshua Kwak | Engineer: Software & Mechanical</title>
-        <meta
-          name="description"
-          content="Portfolio of Joshua Kwak, Software and Mechanical Engineer"
-        />
       </head>
       <body className="font-serif">{children}</body>
     </html>
