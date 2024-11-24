@@ -29,28 +29,28 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ content, title, link }) => {
       <div className="project-content">
         <ReactMarkdown
           components={{
-            h1: ({ node, ...props }) => (
+            h1: (props) => (
               <h1 className="text-4xl font-extrabold text-[var(--foreground)] mt-6 mb-4" {...props} />
             ),
-            h2: ({ node, ...props }) => (
+            h2: (props) => (
               <h2 className="text-3xl font-semibold text-[var(--foreground)] mt-5 mb-3" {...props} />
             ),
-            h3: ({ node, ...props }) => (
+            h3: (props) => (
               <h3 className="text-2xl font-semibold text-[var(--foreground)] mt-4 mb-2" {...props} />
             ),
-            p: ({ node, ...props }) => (
+            p: (props) => (
               <p className="mb-4" {...props} />
             ),
-            img: ({ node, ...props }) => (
+            img: (props) => (
               <img className="my-4" {...props} />
             ),
-            ul: ({ node, ...props }) => (
+            ul: (props) => (
               <ul className="list-disc ml-8" {...props} />
             ),
-            li: ({ node, ...props }) => (
+            li: (props) => (
               <li className="my-2" {...props} />
             ),
-            a: ({ node, ...props }) => (
+            a: (props) => (
               <a
                 {...props}
                 className="px-4 py-2 font-bold text-white bg-blue-500 border border-blue-500 rounded-md transition-colors hover:text-white hover:bg-blue-700"
