@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react';
-import ProjectsSection from '@/components/ProjectsSection';
+import React from "react";
+import ProjectsSection from "@/components/ProjectsSection";
 
-import { DarkModeProvider } from '@/contexts/DarkModeContext';
+import { DarkModeProvider } from "@/contexts/DarkModeContext";
 
 export default function Home() {
 

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useEffect, useState, ReactNode } from "react";
 
 interface DarkModeContextProps {
   isDarkMode: boolean;
@@ -21,30 +21,30 @@ export const DarkModeProvider: React.FC<{ children: ReactNode }> = ({ children }
   // Update theme based on state and store in localStorage
   const updateTheme = (darkMode: boolean) => {
     setIsDarkMode(darkMode);
-    document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
-    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+    document.documentElement.setAttribute("data-theme", darkMode ? "dark" : "light");
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
   };
 
   // Check system preference and localStorage when component mounts
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const storedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     if (storedTheme) {
-      updateTheme(storedTheme === 'dark');
+      updateTheme(storedTheme === "dark");
     } else {
       updateTheme(prefersDark);
     }
 
     // Listen for system theme changes
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const handleThemeChange = (e: MediaQueryListEvent) => {
       updateTheme(e.matches);
     };
-    mediaQuery.addEventListener('change', handleThemeChange);
+    mediaQuery.addEventListener("change", handleThemeChange);
 
     return () => {
-      mediaQuery.removeEventListener('change', handleThemeChange);
+      mediaQuery.removeEventListener("change", handleThemeChange);
     };
   }, []);
 

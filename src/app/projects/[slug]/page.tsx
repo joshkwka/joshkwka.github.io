@@ -1,10 +1,10 @@
-import React from 'react';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown'; 
-import ProjectsLayout from '@/app/projects/[slug]/projects-layout';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import React from "react";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import ReactMarkdown from "react-markdown"; 
+import ProjectsLayout from "@/app/projects/[slug]/projects-layout";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface ProjectPageProps {
   content: string;
@@ -66,11 +66,11 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ content, title, link }) => {
 };
 
 export async function generateStaticParams() {
-  const projectDirectory = path.join(process.cwd(), 'src/app/projects/project-info');
+  const projectDirectory = path.join(process.cwd(), "src/app/projects/project-info");
   const filenames = fs.readdirSync(projectDirectory);
 
   const paths = filenames.map((filename) => ({
-    slug: filename.replace('.md', ''),
+    slug: filename.replace(".md", ""),
   }));
 
   return paths.map((slug) => ({
@@ -79,9 +79,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const projectDirectory = path.join(process.cwd(), 'src/app/projects/project-info');
+  const projectDirectory = path.join(process.cwd(), "src/app/projects/project-info");
   const fullPath = path.join(projectDirectory, `${params.slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const fileContents = fs.readFileSync(fullPath, "utf8");
 
   const { data, content } = matter(fileContents);
 
@@ -91,9 +91,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 const ProjectPageWrapper = async ({ params }: { params: { slug: string } }) => {
-  const projectDirectory = path.join(process.cwd(), 'src/app/projects/project-info');
+  const projectDirectory = path.join(process.cwd(), "src/app/projects/project-info");
   const fullPath = path.join(projectDirectory, `${params.slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
   return <ProjectPage title={data.title} content={content} link={data.link} />;

@@ -1,6 +1,6 @@
-import React from 'react';
-import { useDarkMode } from '@/contexts/DarkModeContext';
-import Image from 'next/image';
+import React from "react";
+import { useDarkMode } from "@/contexts/DarkModeContext";
+import Image from "next/image";
 
 const DarkModeToggle: React.FC = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
@@ -9,7 +9,7 @@ const DarkModeToggle: React.FC = () => {
     <button
       className="w-12 h-12 flex items-center justify-center p-2 rounded-full cursor-pointer transition-colors duration-200 ease-in-out hover:bg-[var(--sidebar-hover-background)] mx-auto"
       onClick={toggleDarkMode}
-      aria-label={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      aria-label={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
     >
       {isDarkMode ? (
         <Image

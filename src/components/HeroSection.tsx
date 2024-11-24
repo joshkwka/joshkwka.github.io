@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { useDarkMode } from '@/contexts/DarkModeContext';
-import DotsGrid from '@/components/DotsGrid';
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { useDarkMode } from "@/contexts/DarkModeContext";
+import DotsGrid from "@/components/DotsGrid";
 
 const HeroSection = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -24,14 +24,14 @@ const HeroSection = () => {
     };
 
     calculateSpeedMultiplier();
-    window.addEventListener('resize', calculateSpeedMultiplier);
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener("resize", calculateSpeedMultiplier);
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      window.removeEventListener('resize', calculateSpeedMultiplier);
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener("resize", calculateSpeedMultiplier);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
@@ -50,7 +50,7 @@ const HeroSection = () => {
         transition={{ duration: 1 }}
       >
         <img
-          src={isDarkMode ? '/images/hero/light-hero-car.png' : '/images/hero/dark-hero-car.png'}
+          src={isDarkMode ? "/images/hero/light-hero-car.png" : "/images/hero/dark-hero-car.png"}
           alt="Car"
           width={320}
           height={103}

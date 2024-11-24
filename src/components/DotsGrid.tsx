@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }) => {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -21,10 +21,10 @@ const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -65,8 +65,8 @@ const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }
     const centerX = screenWidth / 2;
     const centerY = screenHeight / 2;
   
-    const distance = Math.sqrt(Math.pow(dotX - centerX, 2) + Math.pow(dotY - centerY, 2));
-    const maxDistance = Math.sqrt(Math.pow(centerX, 2) + Math.pow(centerY, 2));
+    // const distance = Math.sqrt(Math.pow(dotX - centerX, 2) + Math.pow(dotY - centerY, 2));
+    // const maxDistance = Math.sqrt(Math.pow(centerX, 2) + Math.pow(centerY, 2));
   
     // Calculate the opacity as a combination of both horizontal and vertical distance  
     const horizontalDistanceFactor = Math.abs(dotX - centerX) / screenWidth;
@@ -117,7 +117,7 @@ const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }
         const isHovered = isWithinHoverRadius(dot.x, dot.y);
         const dotColor = isHovered
           ? getGradientColor(dot.x, dot.y)
-          : 'gray';
+          : "gray";
 
         return (
           <div
@@ -130,7 +130,7 @@ const DotsGrid = ({ mousePosition }: { mousePosition: { x: number, y: number } }
               height: `${dotSize}px`,
               backgroundColor: dotColor,
               opacity: isHovered ? 1 : opacity,
-              transition: 'opacity 0.2s ease-out, background-color 0.2s ease-out',
+              transition: "opacity 0.2s ease-out, background-color 0.2s ease-out",
             }}
           />
         );
