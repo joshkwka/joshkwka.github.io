@@ -1,9 +1,8 @@
 const isProd = process.env.NODE_ENV === "production";
-import type { NextConfig } from "next";
 
 const repoName = "joshkwka.github.io";
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   output: "export",
   trailingSlash: true,
   basePath: isProd ? `/${repoName}` : "",
