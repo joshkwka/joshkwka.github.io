@@ -1,7 +1,7 @@
 ---
 title: "Maze-Solving Rover Project"
 ---
-
+![Robot](/images/projects/maze-solving-rover/rover.png)
 ## Project Overview
 
 The **Wall-E Vader** project focused on designing an **autonomous rover** capable of navigating a predefined maze, localizing itself, avoiding obstacles, and completing tasks such as picking up and delivering a block to designated zones. The rover achieved **SAE Level 5 autonomy** by integrating obstacle avoidance, localization, and block manipulation into a single operational algorithm.
@@ -22,10 +22,15 @@ The **Wall-E Vader** project focused on designing an **autonomous rover** capabl
 ### Localization and Navigation
 - **Algorithm**:
   - Employed histogram-based localization combined with a compass for orientation.
+  - designed a heat map to visualize the rover's localization status
 - **Efficiency**:
   - Localized within 1–2 maze squares of movement, leveraging predefined paths and headings.
 - **Execution**:
   - Hard-coded paths simplified navigation but limited adaptability to environmental changes.
+##
+**Heatmap overlayed on top of the known maze design**
+    ![Robot](/images/projects/maze-solving-rover/heatmap.png)
+
 
 ### Block Pick-Up and Delivery
 - **Detection**:
@@ -35,6 +40,10 @@ The **Wall-E Vader** project focused on designing an **autonomous rover** capabl
 - **Challenges**:
   - Sensor misalignments and mounting inconsistencies were mitigated but not fully eliminated.
   - Hard-coded paths required precise block placement within the maze.
+##
+**Time-of-flight sensor layout** 
+    ![Robot](/images/projects/maze-solving-rover/tof-sensors.png)
+
 
 ### Integration
 - All subsystems were combined seamlessly into a unified algorithm.
@@ -71,15 +80,3 @@ The **Wall-E Vader** project focused on designing an **autonomous rover** capabl
 ### Sensor Utilization
 - Optimize sensor routines to reduce processing delays.
 - Enhance the block-finding algorithm to handle arbitrary block placements.
-
----
-
-## Figures to Include
-1. **Figure 1**: Sensor layout comparison.
-2. **Figure 4**: Heat map overlay of localization.
-3. **Figure 11**: Initial vs. final mechanical design.
-4. **Figure 13**: Final electrical circuit diagram.
-
----
-
-This project showcases the effective integration of **mechanical, electrical, and software subsystems** into a cohesive, autonomous solution, achieving significant milestones in mechatronics design and implementation.

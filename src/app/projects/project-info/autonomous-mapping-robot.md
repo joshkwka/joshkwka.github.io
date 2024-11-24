@@ -10,15 +10,17 @@ This project involves the development and implementation of an **autonomous Turt
   - Bumper sensors
   - Cliff sensors
   - Kinect RGB camera and depth sensors.
-- **Environment Constraints**: Explored a **4.87x4.87 m²** area with obstacles, completing the task autonomously within **8 minutes**.
-
+- **Environment Constraints**: Explored a **4.87 x 4.87 m²** area with obstacles, completing the task autonomously within **8 minutes**.
+##
+---
 ## Technology Stack
 
 - **Language**: C++
 - **Algorithm**: Depth-First Search (**DFS**) for exploration.
 - **Framework**: Robot Operating System (**ROS**).
 - **Sensors**: Laser, bumper, and odometry sensors for navigation and localization.
-
+##
+---
 ## Features
 
 ### Exploration Strategy
@@ -33,10 +35,12 @@ This project involves the development and implementation of an **autonomous Turt
   - Executed the **DFS algorithm** to determine optimal paths.
   - Planned valid object detection locations to ensure clear visibility.
 - **Low-Level Controller**:
-  - Managed sensor inputs and actuator responses for precise real-time navigation.
-- **Sensory Integration**:
-  - **Odometry Sensors**: Maintained positional accuracy despite odometry drift.
+  - Managed sensor inputs and actuator responses for obstacle avoidance.
+  - Utilized accelerometer data to create a proportional controller for precise movement.
 
+![ControllerFlowChart](/images/projects/autonomous-mapping-robot/flowchart.png)
+
+---
 ## Key Findings
 
 - **DFS Algorithm**:
@@ -46,6 +50,9 @@ This project involves the development and implementation of an **autonomous Turt
 - **Precise Navigation**:
   - Adjusted sensory feedback and control responses enabled effective obstacle avoidance and navigation.
 
+![ExplorationDiagram](/images/projects/autonomous-mapping-robot/exploration-diagram.png)
+
+---
 ## Recommendations
 
 1. **Frontier-Based Exploration**:
@@ -55,10 +62,3 @@ This project involves the development and implementation of an **autonomous Turt
 3. **Robust Testing**:
    - Conduct real-world trials in diverse environments to refine the system.
 
-## Figures to Include
-
-- **Figure 1**: High-level and low-level controller flowchart.
-- **Figure 2**: Visualization of DFS algorithm traversal.
-- **Graph Representation**: Node-based exploration map showing visited and unexplored nodes.
-
-This project highlights the successful integration of robotics and algorithmic strategies to address challenges in autonomous mapping and navigation, paving the way for scalable robotic solutions in dynamic environments.

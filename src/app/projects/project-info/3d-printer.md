@@ -21,14 +21,14 @@ The **MindCraft3D** is a professional-grade 3D printer designed to provide relia
   - Auto-leveling sensor for consistent layer heights.
   - Enclosed heated chamber for improved print quality.
   - LED lighting and external device mounts for enhanced usability.
-
+##
 ---
 
 ## Design Considerations
 
 - Focused on **compactness** and **user-friendly operation**.
 - Balanced **performance** and **affordability**, with a total manufacturing cost of **$5000–$6000 CAD**.
-
+##
 ---
 
 ## Performance Metrics
@@ -36,7 +36,7 @@ The **MindCraft3D** is a professional-grade 3D printer designed to provide relia
 - **Print Volume**: 300x300x300 mm.
 - **Accuracy**: Within **0.15% uncertainty**.
 - **Service Life**: Designed to operate for up to **15,000 hours**.
-
+##
 ---
 
 ## Component Insights
@@ -55,27 +55,3 @@ The **MindCraft3D** is a professional-grade 3D printer designed to provide relia
 ### Hot End Selection:
 - **Nozzle Materials**: Brass or stainless-steel nozzles optimized for different filament types.
 - **Adjustability**: Nozzles can be configured for faster or more detailed prints.
-
----
-
-## Future Recommendations
-
-- **Material Innovation**:
-  - Explore alternative materials, such as **316 stainless steel**, for enhanced corrosion resistance.
-- **Multi-Material Capabilities**:
-  - Expand support for advanced prototyping needs.
-- **Modular Upgrades**:
-  - Investigate tool-changing heads for greater versatility.
-
----
-
-## Figures to Include
-
-1. **Figure 7.1.1**: Left offset view of the final design.
-2. **Figure 7.1.3**: Right offset view of the final design.
-3. **Figure 7.2.4**: Assembly of the filament extruder.
-4. **Figure D.1**: Hot End comparison table.
-
----
-
-The **MindCraft3D** sets a benchmark for affordable, professional 3D printing, addressing the needs of small firms seeking reliable and cost-effective prototyping solutions.

@@ -57,13 +57,13 @@ const ProjectPage: React.FC<ProjectPageProps> = async ({ slug }) => {
               />
             ),
             p: (props) => <p className="mb-4" {...props} />,
-            img: ({ src = "", alt = "", width = "800", height = "600", ...props }) => (
+            img: ({ src = "", alt = "", width = "800", height = "300", ...props }) => (
               <span className="flex justify-center my-4">
                 <Image
                   src={src}
                   alt={alt || "Project Image"}
-                  width={Number(width)}
                   height={Number(height)}
+                  width={Number(width)}
                   className="rounded-md"
                   {...props}
                 />

@@ -25,6 +25,7 @@ The TurtleBot was required to:
   - Optimized object visitation order by minimizing **Euclidean distances** between objects.
 - **Object Positioning**:
   - Calculated valid positions relative to objects to ensure clear detection.
+![Angled-Approach](/images/projects/object-recognition-robot/angles.png)
 
 ### Object Identification
 - **OpenCV's SURF Algorithm**:
@@ -33,7 +34,7 @@ The TurtleBot was required to:
   - Addressed discrepancies between simulated and real-world conditions.
 - **Confidence Levels**:
   - Determined matches for template images, blank images, and duplicates based on confidence thresholds.
-
+![Feature-Detection](/images/projects/object-recognition-robot/feature-detection.png)
 ---
 
 ## Robot Design and Implementation
@@ -49,7 +50,9 @@ The TurtleBot was required to:
   - Determined the robot's global path and object interaction strategy.
 - **Low-Level Control**:
   - Managed manual movement in high-cost map areas and handled obstacle avoidance in real-time.
-
+##
+#### **Visualization of high-cost region on cost map**
+![High-Cost-Map](/images/projects/object-recognition-robot/highcost.png)
 ---
 
 ## Performance Metrics
@@ -77,7 +80,3 @@ The TurtleBot was required to:
 1. **Figure 4**: Robot’s angle offsets around an object.
 2. **Figure 5**: High-cost area navigation issues.
 3. **Figure 6**: Feature detection and matching examples.
-
----
-
-This project highlights the integration of **navigation algorithms** and **image processing techniques** to achieve autonomous object identification, setting the stage for further advancements in robotics and automation.

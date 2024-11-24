@@ -2,6 +2,7 @@
 title: "Remote-Controlled Water Gun"
 link: "https://github.com/joshkwka/Remote-Water-Gun"
 ---
+![Built-Assembly](/images/projects/watergunirl.jpg)
 
 The **Remote-Controlled Water Gun** is a project that combines mechanical design, electronics, and software to create a fun and functional device capable of remote operation. This project demonstrates an innovative use of technology for precise control and effective functionality.
 
@@ -12,6 +13,8 @@ The water gun features a motorized mechanism that allows remote control over pit
 - **Raspberry Pi**: Acts as the main controller, managing inputs, outputs, and camera feedback.
 - **Camera Feedback**: Streams a live video feed to provide real-time aiming capabilities.
 - **3D-Printed Components**: Designed to reduce cost, weight, and assembly complexity.
+
+![CAD](/images/projects/remote-water-gun/CAD.png)
 
 ---
 
@@ -99,7 +102,3 @@ The water gun features a motorized mechanism that allows remote control over pit
 2. **Figure 2**: Control interface screenshot.
 3. **Figure 3**: Camera stream view in operation.
 4. **Figure 4**: Electrical circuit diagram.
-
----
-
-This project showcases the effective integration of **mechanical, electronic, and software engineering** principles to create an engaging, functional, and remotely controlled water gun. It demonstrates the potential of combining **3D printing**, **wireless control**, and **live feedback** to develop innovative solutions.

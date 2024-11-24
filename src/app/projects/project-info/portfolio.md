@@ -2,6 +2,7 @@
 title: "Portfolio Website"
 link: "https://github.com/joshkwka/joshkwka.github.io"
 ---
+![Portfolio Homepage](/images/projects/portfolio/homepage.png)
 
 ## Project Overview
 
@@ -42,13 +43,6 @@ This project is a dynamic portfolio website showcasing my engineering projects, 
 
 ---
 
-## Screenshots
-
-![Portfolio Homepage](/images/projects/portfolio-homepage.png)
-![Project Detail Page](/images/projects/portfolio-project-detail.png)
-
----
-
 ## Future Improvements
 
 1. **Expand Project Pages**:
@@ -59,7 +53,3 @@ This project is a dynamic portfolio website showcasing my engineering projects, 
    - Add detailed user metrics to better understand visitor interactions.
 4. **Search and Filtering**:
    - Implement a search bar to navigate projects and experiences easily.
-
----
-
-This portfolio project serves as both a personal branding tool and a technical demonstration of my skills in web development, engineering, and design. It is a continually evolving project that grows with my career.

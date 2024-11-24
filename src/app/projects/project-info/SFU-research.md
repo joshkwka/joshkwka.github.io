@@ -76,7 +76,3 @@ During my tenure as a researcher in Industry 4.0 technologies, I worked on imple
 1. **Figure 1**: Architecture of the OPC UA integration.
 2. **Figure 2**: Sample SCADA dashboard visualizing sensor trends.
 3. **Figure 3**: Serial communication diagram between Arduino and Raspberry Pi.
-
----
-
-This project demonstrated the potential of Industry 4.0 technologies to revolutionize industrial automation by enhancing data accessibility, visualization, and operational efficiency.

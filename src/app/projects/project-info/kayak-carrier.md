@@ -3,6 +3,7 @@ title: "MIE442 Design Project: Kayak Carrier"
 ---
 
 ## Project Overview
+![Printer](/images/projects/kayak-carrier/assembly.png)
 
 This project focuses on designing a lightweight, portable kayak carrier optimized for strength-to-weight ratio, durability, and cost-efficiency. The carrier is designed to transport loads up to **100 kg** over rough terrains at **4 km/h**. Critical analyses included **motion simulation**, **finite element analysis (FEA)**, and **analytical methods** to evaluate stress, deflection, and fatigue.
 
@@ -33,13 +34,18 @@ This project focuses on designing a lightweight, portable kayak carrier optimize
 - **Impact Forces**:
   - Max Y-axis force on main bar: **945 N**.
 
+![Printer](/images/projects/kayak-carrier/reaction-force.png)
+
 ### Finite Element Analysis (FEA):
 - Focused on **main bar** and **Fastener B**:
   - **Main Bar**:
     - Improved Factor of Safety (FOS) from **1.45** to **2.11** by increasing pipe thickness.
+![Printer](/images/projects/kayak-carrier/main-bar-analysis.png)
+
   - **Fastener B**:
     - Von-Mises FOS: **2.33**.
     - Deformation limited to **0.0051 mm**.
+![Printer](/images/projects/kayak-carrier/pin-analysis.png)
 
 ### Analytical Calculations:
 - Complemented FEA results with **stress**, **deflection**, and **fatigue analysis**.
@@ -57,17 +63,3 @@ This project focuses on designing a lightweight, portable kayak carrier optimize
   - Study environmental effects (corrosion, terrain).
   - Conduct multi-impact simulations for diverse operational conditions.
   - Refine model for greater accuracy.
-
----
-
-## Figures to Include
-
-1. **Figure 1**: Kayak Carrier Assembly.
-2. **Figure 3**: Y-axis reaction force during impact.
-3. **Figure 5**: Von-Mises stress distribution in the main bar.
-4. **Figure 7**: Critical stress regions in Fastener B.
-5. Mesh convergence plots and analytical diagrams from Appendices B and D.
-
----
-
-This project demonstrates a **robust engineering approach**, balancing **innovative design** with **analytical rigor** to meet performance and cost targets.
