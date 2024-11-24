@@ -81,6 +81,7 @@ const ProjectsSection: React.FC = () => {
     {
       title: "Portfolio Website",
       description: "A personal portfolio built with Next.js, React, and Tailwind CSS.",
+      link: "https://www.joshkwak.com",
       slug: "portfolio",
       image: "/images/projects/portfolio.png",
       skills: ["Tailwind CSS", "React", "Next.js"],
