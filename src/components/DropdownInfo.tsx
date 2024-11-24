@@ -46,8 +46,8 @@ const DropdownInfo: React.FC<DropdownInfoProps> = ({
           bg-[var(--header-background)] text-var[var(--header-foreground)]
           hover:bg-[var(--header-hover-background)] text-var[var(--header-hover-foreground)]"
       >
-        <span className="text-lg">{company}</span>
-        {date && <span className="text-sm">{date}</span>}
+        <span className="text-lg text-left">{company}</span>
+        {date && <span className="text-sm text-left">{date}</span>}
       </button>
 
       <div
