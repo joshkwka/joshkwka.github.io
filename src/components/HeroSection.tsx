@@ -39,7 +39,7 @@ const HeroSection = () => {
   const translateX = scrollPosition * speedMultiplier;
 
   return (
-    <section id="home" className="relative h-screen">
+    <section id="home" className="relative h-screen min-h-custom">
       {/* Car Animation with Parallax Effect */}
       <motion.div
         className="absolute bottom-20 left-2 transform -translate-y-1/2 z-20"
@@ -56,7 +56,7 @@ const HeroSection = () => {
             width={320}
             height={103}
             priority
-          />
+        />
       </motion.div>
 
       <DotsGrid mousePosition={mousePosition} />

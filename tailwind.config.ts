@@ -9,6 +9,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      minHeight: {
+        'custom' : '600px',
+      },
       fontFamily: {
         bodoni: ['"Bodoni Moda"', 'serif']
       },

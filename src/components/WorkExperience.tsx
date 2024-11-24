@@ -211,7 +211,11 @@ const WorkExperience = () => {
   return (
     <section id="workexperience" className="mt-24 my-8 py-4 px-4">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-3xl font-bold">Work Experience</h2>
+        <h2 className="text-3xl font-bold">
+          <span className="hidden xs:inline">Work Experiences</span>
+          <span className="inline xs:hidden">Work Exp.</span>
+        </h2>
+
         <Tabs onTabChange={(tab) => setActiveTab(tab)} />
       </div>
       <div className="space-y-4">
