@@ -51,22 +51,22 @@ const HeroSection = () => {
         transition={{ duration: 1 }}
       >
         <Image
-          src={isDarkMode ? "/images/hero/light-hero-car.png" : "/images/hero/dark-hero-car.png"}
-          alt="Car"
-          width={320}
-          height={103}
-          priority
-        />
+            src={isDarkMode ? "/images/hero/light-hero-car.png" : "/images/hero/dark-hero-car.png"}
+            alt="Car"
+            width={320}
+            height={103}
+            priority
+          />
       </motion.div>
 
       <DotsGrid mousePosition={mousePosition} />
 
       {/* Main Content */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4 z-20">
-        <h1 className="text-5xl font-bold py-1 sm:text-7xl">Joshua Kwak</h1>
-        <h2 className="text-3xl font-bold py-1 sm:text-4xl">Engineer</h2>
-        <h2 className="text-2xl font-bold italic py-1 sm:text-3xl">Software & Mechanical</h2>
-        <p className="text-md max-w-2xl mx-auto sm:text-lg">
+        <h1 className="text-5xl font-bold py-1 sm:text-5xl whitespace-nowrap">Joshua Kwak</h1>
+        <h2 className="text-3xl font-bold py-1 sm:text-3xl">Engineer</h2>
+        <h2 className="text-2xl font-bold italic py-1 sm:text-3xl whitespace-nowrap">Software & Mechanical</h2>
+        <p className="text-md max-w-2xl mx-auto sm:text-md">
           I am a passionate engineer with a strong foundation in both software and mechanical systems. With a background in mechatronics, I strive to solve complex problems and push the boundaries of technology.
         </p>
       </div>
