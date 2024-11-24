@@ -22,7 +22,7 @@ const Education = () => {
                   description: "Specialized in Mechatronics, integrating mechanical, software, and electrical engineering to develop innovative technologies",
                 },
                 {
-                  description: "Coursework in Mechatronics Principles, Mechatronics Systems, Design Optimization, and others",
+                  description: "Coursework in Control Systems, Mechatronics Principles, Mechatronics Systems: Design & Integration, Numerical Methods, Differential Equations, Probability and Statistics, Fundamentals of Computer Programming, and more."
                 },
                 {
                   description: "Dean's Honours List: Fall 2019, Winter 2020, Fall 2020, Winter 2021, Fall 2022, Winter 2023, Fall 2023, Winter 2024",

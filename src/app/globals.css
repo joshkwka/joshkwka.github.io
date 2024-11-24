@@ -50,3 +50,18 @@ h1, h2, p, a {
 a:hover {
   color: var(--foreground);
 }
+
+
+/* Project Page Styling */
+.project-content p {
+  margin-bottom: 1.5rem;
+}
+
+.project-content h2, .project-content h3 {
+  margin-top: 1.5rem;
+}
+
+.project-content img {
+  margin-top: 1rem; 
+  margin-bottom: 1rem; 
+}

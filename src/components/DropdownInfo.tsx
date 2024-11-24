@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 interface BulletPoint {
   category?: string;
@@ -55,7 +56,9 @@ const DropdownInfo: React.FC<DropdownInfoProps> = ({
         }`}
       >
         {location && (
-          <h3 className="text-sm font-medium mb-2">Location: {location}</h3>
+          <h3 className="text-sm font-medium mb-2 flex items-center">
+            <FaMapMarkerAlt className="mr-2 text-red-500" /> {location}
+          </h3>
         )}
         <div className="space-y-4">
           {positions.map((position, index) => (

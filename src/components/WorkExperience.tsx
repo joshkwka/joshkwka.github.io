@@ -71,7 +71,7 @@ const WorkExperience = () => {
     },
     {
       id: "veoneer",
-      company: "Veoneer",
+      company: "Veoneer (formerly Autoliv)",
       date: "2022",
       location: "Markham, Ontario, Canada",
       positions: [
