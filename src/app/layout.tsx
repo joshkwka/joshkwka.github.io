@@ -20,6 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={bodoniModa.variable}>
+      <head>
+        <link rel="icon" href="favicon.ico" />
+        <title>Joshua Kwak | Engineer: Software & Mechanical</title>
+        <meta
+          name="description"
+          content="Portfolio of Joshua Kwak, Software and Mechanical Engineer"
+        />
+      </head>
       <body className="font-serif">
         {children}
       </body>
