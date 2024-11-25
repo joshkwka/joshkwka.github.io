@@ -22,7 +22,7 @@ const PhotoCarousel = () => {
 
   return (
     <section id="photos" className="mt-24 my-8 py-4 px-4">
-      <h2 className="text-3xl font-bold mb-6">Photos I&#39;ve Taken</h2>
+      <h2 className="text-2xl xs:text-3xl font-bold mb-6">Photos I&#39;ve Taken</h2>
 
       <div className="relative">
         <Swiper
