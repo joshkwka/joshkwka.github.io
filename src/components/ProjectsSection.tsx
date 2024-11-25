@@ -74,6 +74,7 @@ const ProjectsSection: React.FC = () => {
       title: "Industry 4.0 Research",
       description: "Remote communication between sensors and computers via OPC UA",
       slug: "SFU-research",
+      image: "/images/projects/industry4.png",
       skills: ["Python", "C", "Ignition"],
       tags: ["Software", "Mechanical"],
       textColor: "dark",
