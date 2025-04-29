@@ -7,6 +7,27 @@ const Education = () => {
       <div className="space-y-4">
         <h2 className="text-2xl xs:text-3xl font-bold mb-6">Education</h2>
 
+        {/* Georgia Tech */}
+        <DropdownInfo
+          company="University of Toronto"
+          initiallyOpen={true} 
+          positions={[
+            {
+              title: "Master of Science - Computer Science",
+              bulletPoints: [
+                {
+                  description: "Specializing in computing systems",
+                },
+                {
+                  description: "Coursework to include subjects such as Artificial Intelligence, Machine Learning, Software Development, and Data Science",
+                },
+              ],
+            }
+          ]}
+          date="2025-Present"
+          location="Atlanta, Georgia, United States (Online)"
+        />
+
         {/* University of Toronto */}
         <DropdownInfo
           company="University of Toronto"
@@ -22,7 +43,7 @@ const Education = () => {
                   description: "Specialized in Mechatronics, integrating mechanical, software, and electrical engineering to develop innovative technologies",
                 },
                 {
-                  description: "Coursework in Control Systems, Mechatronics Principles, Mechatronics Systems: Design & Integration, Numerical Methods, Differential Equations, Probability and Statistics, Fundamentals of Computer Programming, and more."
+                  description: "Coursework in Control Systems, Mechatronics Principles, Mechatronics Systems: Design & Integration, Numerical Methods, Differential Equations, Probability and Statistics, Fundamentals of Computer Programming, and more"
                 },
                 {
                   description: "Dean's Honours List: Fall 2019, Winter 2020, Fall 2020, Winter 2021, Fall 2022, Winter 2023, Fall 2023, Winter 2024",

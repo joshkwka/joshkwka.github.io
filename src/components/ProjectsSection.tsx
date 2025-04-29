@@ -17,6 +17,15 @@ const ProjectsSection: React.FC = () => {
       textColor: "dark",
     },
     {
+      title: "Productivity Widgets",
+      description: "Built a Django-based backend with scalable REST APIs for a modular React frontend, hosting multiple productivity-focused tools with user-specific data handling.",
+      slug: "widgets",
+      image: "/images/projects/widgets.png",
+      skills: ["Django", "React", "SQL", "REST APIs"],
+      tags: ["Software"],
+      textColor: "dark",
+    },
+    {
       title: "Autonomous Mapping Robot",
       description: "Autonomous mapping and exploration of unknown environments using DFS, ROS, and SLAM, with path planning and obstacle detection.",
       slug: "autonomous-mapping-robot",
