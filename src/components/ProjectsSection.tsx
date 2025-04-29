@@ -18,7 +18,7 @@ const ProjectsSection: React.FC = () => {
     },
     {
       title: "Productivity Widgets",
-      description: "Built a Django-based backend with scalable REST APIs for a modular React frontend, hosting multiple productivity-focused tools with user-specific data handling.",
+      description: "Django-based backend with scalable REST APIs for a modular React frontend, hosting multiple productivity-focused tools with user-specific data handling.",
       slug: "widgets",
       image: "/images/projects/widgets.png",
       skills: ["Django", "React", "SQL", "REST APIs"],
