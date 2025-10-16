@@ -17,7 +17,7 @@ const WorkExperience = () => {
       positions: [
         {
           title: "Associate Analysis Engineer",
-          date: "Aug 2024 - Present",
+          date: "Aug 2024 - Oct 2025",
           bulletPoints: [
             {
               category: "Mechanical",
