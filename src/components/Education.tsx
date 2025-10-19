@@ -9,7 +9,7 @@ const Education = () => {
 
         {/* Georgia Tech */}
         <DropdownInfo
-          company="Georgia Tech"
+          company="Georgia Institute of Technology"
           initiallyOpen={true} 
           positions={[
             {
