@@ -16,16 +16,19 @@ const Education = () => {
               title: "Master of Science - Computer Science",
               bulletPoints: [
                 {
-                  description: "GPA N/A/4.0",
+                  description: "GPA 4.0/4.0",
                 },
                 {
                   description: "Specializing in Artificial Intelligence",
                 },
                 {
-                  description: "Current coursework: Database Systems",
+                  description: "Completed coursework: Database Systems",
                 },
                 {
-                  description: "Coursework to include subjects such as Artificial Intelligence, Machine Learning, Software Development, and Data Science",
+                  description: "Current coursework: Computer Networks, Operating Systems",
+                },
+                {
+                  description: "Upcoming coursework: Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Software Development, Software Architecture and Design",
                 },
               ],
             }
