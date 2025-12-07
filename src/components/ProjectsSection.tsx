@@ -8,6 +8,15 @@ const ProjectsSection: React.FC = () => {
   // Images should be 925x500
   const projects = [
     {
+      title: "Coursework: Peachtree Data Warehouse",
+      description: "A fully normalized PostgreSQL database with a Python/Sanic API layer and a Node-based frontend for executing complex queries and visualizing business sales metrics.",
+      slug: "data-warehouse",
+      image: "/images/projects/data-warehouse.png",
+      skills: ["PostgreSQL", "SQL", "REST APIs"],
+      tags: ["Software"],
+      textColor: "dark",
+    },
+    {
       title: "Object Recognition Robot",
       description: "Autonomous navigation and object recognition using a nearest neighbor algorithm, ROS, and OpenCV to identify objects based on image recognition.",
       slug: "object-recognition-robot",
