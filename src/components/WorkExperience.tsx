@@ -225,7 +225,8 @@ const WorkExperience = () => {
             company={job.company}
             date={job.date}
             location={job.location}
-            initiallyOpen={openJobs[job.id] ?? false}
+            // initiallyOpen={openJobs[job.id] ?? false}
+            initiallyOpen={true}
             onToggle={() => toggleJob(job.id)}
             positions={job.positions}
           />
