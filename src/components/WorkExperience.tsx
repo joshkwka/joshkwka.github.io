@@ -4,9 +4,6 @@ import Tabs from "@/components/Tabs";
 
 const WorkExperience = () => {
   const [activeTab, setActiveTab] = useState<"Software" | "Mechanical">("Software");
-  const [openJobs, setOpenJobs] = useState<{ [key: string]: boolean }>({
-    tesla: true, 
-  });
 
   const workExperiences = [
     {
@@ -187,6 +184,12 @@ const WorkExperience = () => {
     },
   ];
 
+  const [openJobs, setOpenJobs] = useState<Record<string, boolean>>(
+    Object.fromEntries(
+      workExperiences.map((job) => [job.id, true])
+    )
+  );
+
   const toggleJob = (id: string) => {
     setOpenJobs((prev) => ({
       ...prev,
@@ -225,8 +228,7 @@ const WorkExperience = () => {
             company={job.company}
             date={job.date}
             location={job.location}
-            // initiallyOpen={openJobs[job.id] ?? false}
-            initiallyOpen={true}
+            initiallyOpen={openJobs[job.id] ?? false}
             onToggle={() => toggleJob(job.id)}
             positions={job.positions}
           />
