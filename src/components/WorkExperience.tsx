@@ -9,7 +9,7 @@ const WorkExperience = () => {
     {
       id: "tesla",
       company: "Tesla",
-      date: "2023, 2024 - Present",
+      date: "2023, 2024 - 2025",
       location: "Fremont, California, USA",
       positions: [
         {
