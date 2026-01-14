@@ -26,11 +26,11 @@ const WorkExperience = () => {
             },
             {
               category: "Software",
-              description: "Developed a Python script leveraging RegEx for string identification and glob for directory parsing on Linux to identify and modify abaqus include files across simulation iterations, significantly streamlining workflow efficiency",
+              description: "Developed Python automation tooling, leveraging RegEx for string identification and glob for directory parsing on Linux, to parse, transform, and validate Abaqus include files across simulation iterations, reducing manual engineering effort by 80%.",
             },
             {
               category: "Software",
-              description: "Built a mass-representation generation tool that automatically creates mass representations of components using CSV input coordinates. This tool significantly enhanced model accuracy and reduced processing time from 5–10 minutes to under 30 seconds",
+              description: "Enhanced modeling consistency by creating a Python script for mass-representation generation, additionally reducing modeling time from 10 minutes to 20 seconds (97% improvement).",
             },
           ],
         },
@@ -90,7 +90,7 @@ const WorkExperience = () => {
             },
             {
               category: "Both",
-              description: "Introduced a new ‘3D Print Queue’ program, allowing all of the plant’s engineers to be able to request 3D printed parts",
+              description: "Engineered an internal Python-based workflow application using Microsoft Power Automate, Microsoft Lists, and Python to manage 3D printing requests, streamlining workflows for 20+ engineers and eliminating processing time",
             },
           ],
         },
