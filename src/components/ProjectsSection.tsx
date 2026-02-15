@@ -111,7 +111,6 @@ const ProjectsSection: React.FC = () => {
       title: "Ditto Golf - Swing Analysis Tool",
       description: "A dual-video synchronization engine with frame-by-frame playback. Architected and deployed using LLM-accelerated development workflows.",
       link: "https://ditto-golf.vercel.app/",
-      slug: "dittogolf",
       image: "/images/projects/dittogolf.png",
       skills: ["React", "TypeScript", "Video Processing", "Prompt Engineering"],
       tags: ["Software"],
