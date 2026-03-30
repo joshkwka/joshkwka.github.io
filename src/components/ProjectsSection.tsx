@@ -8,6 +8,15 @@ const ProjectsSection: React.FC = () => {
   // Images should be 925x500
   const projects = [
     {
+      title: "Quadruped Locomotion Engine",
+      description: "Programmed a ROS 2 quadruped robot with closed-loop PID balancing and Drive-by-Wire teleoperation, utilizing a custom C++ inverse kinematics solver for omnidirectional trotting.",
+      link: "https://github.com/joshkwka/ros2-quadruped-locomotion/",
+      image: "/images/projects/quadruped.png",
+      skills: ["ROS 2", "C++", "Kinematics", "Control Systems"],
+      tags: ["Software"],
+      textColor: "dark",
+    },
+    {
       title: "Autonomous Mapping Robot",
       description: "Autonomous mapping and exploration of unknown environments using DFS, ROS, and SLAM, with path planning and obstacle detection.",
       slug: "autonomous-mapping-robot",
