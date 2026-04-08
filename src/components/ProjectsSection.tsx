@@ -8,6 +8,15 @@ const ProjectsSection: React.FC = () => {
   // Images should be 925x500
   const projects = [
     {
+      title: "Gopher Queue",
+      description: "A high-throughput, distributed task execution engine designed to manage containerized worker pools. Built with Golang and gRPC for low-latency communication, and orchestrated via Kubernetes for dynamic scaling and fault tolerance.",
+      link: "https://github.com/joshkwka/Gopher-Queue/",
+      image: "/images/projects/gopher-queue.png",
+      skills: ["Golang", "Kubernetes", "Docker", "gRPC", "Protocol Buffers"],
+      tags: ["Software"],
+      textColor: "dark",
+    },
+    {
       title: "Quadruped Locomotion Engine",
       description: "Programmed a ROS 2 quadruped robot with closed-loop PID balancing and Drive-by-Wire teleoperation, utilizing a custom C++ inverse kinematics solver for omnidirectional trotting.",
       link: "https://github.com/joshkwka/ros2-quadruped-locomotion/",
