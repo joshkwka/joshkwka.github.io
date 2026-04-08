@@ -12,7 +12,7 @@ const ProjectsSection: React.FC = () => {
       description: "A high-throughput, distributed task execution engine designed to manage containerized worker pools. Built with Golang and gRPC for low-latency communication, and orchestrated via Kubernetes for dynamic scaling and fault tolerance.",
       link: "https://github.com/joshkwka/Gopher-Queue/",
       image: "/images/projects/gopher-queue.png",
-      skills: ["Golang", "Kubernetes", "Docker", "gRPC", "Protocol Buffers"],
+      skills: ["Golang", "Kubernetes", "Docker", "gRPC", "Protocol Buffers", "PostgreSQL"],
       tags: ["Software"],
       textColor: "dark",
     },
